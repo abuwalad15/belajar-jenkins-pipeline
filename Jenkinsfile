@@ -107,7 +107,7 @@ pipeline {
       }
     }
 
-    //stage("Prepare") {
+    stage("Prepare") {
 
       environment {
         APP = credentials("eko_rahasia")
@@ -130,7 +130,7 @@ pipeline {
       }
     }
 
-    //stage("Build") {
+    stage("Build") {
       agent {
         node {
           label "linux && java11"
@@ -150,7 +150,7 @@ pipeline {
       }
     }
 
-    //stage("Test") {
+    stage("Test") {
       agent {
         node {
           label "linux && java11"
@@ -172,7 +172,7 @@ pipeline {
       }
     }
 
-    //stage("Deploy") {
+    stage("Deploy") {
       input {
         message "Can we deploy?"
         ok "Yes, of course"
