@@ -10,7 +10,7 @@ pipeline {
                 echo ("Hello ini sedang belajar jenkins pipeline")
             }
         }
-
+    }
         post {
             always {
                 echo "Saya akan selalu berkata Hello lagi"
@@ -26,4 +26,3 @@ pipeline {
             }
         }
     }
-}
