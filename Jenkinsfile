@@ -25,4 +25,4 @@ pipeline {
                 echo "Tak peduli sukses atau gagal"
             }
         }
-    }
+}
