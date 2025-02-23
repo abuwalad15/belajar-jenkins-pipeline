@@ -15,7 +15,7 @@ pipeline {
             always {
                 echo "Saya akan selalu berkata Hello lagi"
             }
-            sucess {
+            success {
                 echo "Horee sukses"
             }
             failure {
