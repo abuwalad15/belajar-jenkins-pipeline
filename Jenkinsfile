@@ -5,9 +5,21 @@ pipeline {
         }
     }
     stages {
-        stage("Hello") {
+        stage("Build") {
             steps {
-                echo ("Hello ini sedang belajar jenkins pipeline")
+                echo ("Hello Build")
+            }
+        }
+
+        stage("Test") {
+            steps {
+                echo ("Hello Test")
+            }
+        }
+
+        stage("Deploy") {
+            steps {
+                echo ("Hello Deploy")
             }
         }
     }
